@@ -1,0 +1,69 @@
+* {
+    width: 800px;
+    margin: auto;
+}
+
+body {
+    border: silver 20px ridge;
+    padding: 40px;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 250px 250px 1fr;
+    grid-template-rows: 50px 50px 10px 30px 30px 10px;
+    grid-template-areas:
+        "name . pic"
+        " . dev pic"
+        "blackrow blackrow pic"
+        ". . pic"
+        ". . ."
+        "blackrow2 blackrow2 blackrow2";
+}
+
+.test {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2 {
+    width: 100%;
+}
+
+h1 {
+    grid-area: name;
+}
+
+h2 {
+    grid-area: dev;
+}
+
+.picofme {
+    width: 100%;
+    height: 100%;
+    grid-area: pic;
+    display: block;
+}
+
+img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.blackrow {
+    background-color: #414141;
+    width: 100%;
+    grid-area: blackrow;
+    height: 100%;
+}
+
+.blackrow2 {
+    background-color: #414141;
+    width: 100%;
+    grid-area: blackrow2;
+    height: 100%;
+}
